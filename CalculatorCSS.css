@@ -3,14 +3,9 @@
         color:white;
         height:375px;
         max-width:296px;
-
-
 }
-.table{
-margin-bottom: 0rem;
-width:263px;
-}
- .title{
+
+.title{
          margin-bottom: 10px;
          text-align:center;
          width: 200px;
@@ -22,47 +17,49 @@ width:263px;
         button{
         text-decoration:none;
         color:white;
-        }
- .btn-circle.btn-sm {
+}
+
+.btn-circle.btn-sm {
             width: 30px;
             height: 30px;
             padding: 6px 0px;
             border-radius: 15px;
             font-size: 18px;
             text-align: center;
-        }
-         .btn-circle.btn-md {
+}
+
+.btn-circle.btn-md {
             width: 50px;
             height: 50px;
             padding: 7px 10px;
             border-radius: 25px;
             font-size: 25px;
             text-align: center;
-        }
-            .btn-circle.btn-xl {
+}
+
+.btn-circle.btn-xl {
             width: 70px;
             height: 70px;
             padding: 10px 16px;
             border-radius: 35px;
             font-size: 12px;
             text-align: center;
-        }
-         input[type="button"]
-         {
+}
 
+input[type="button"]{
          background-color:gray;
          color: black;
          border: solid black 2px;
          width:100%
-         }
+}
 
-         input[type="text"]
-         {
+input[type="text"]{
          background-color:black;
          color:white;
          border:none;
          width:100%;
-         }
- #Try{
+}
+
+#Try{
   margin-top: 100px;
- }
+}

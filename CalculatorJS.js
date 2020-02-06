@@ -7,20 +7,12 @@ var waiting_sec = false
 single_ispressed=false
 localStorage.setItem('eq',JSON.stringify(eq));
 
-//function checklength()
-//{
-//         var v = document.getElementById('result').value;
-//         if (v.length > 10)
-//         {
-//            window.alert("helox")
-//            return false; // keep form from submitting
-//         }
-//}
+
 function showHistory()
 {
     var h=document.getElementsByClassName("History")
     var s=document.getElementsByClassName("secret")
-//    window.alert(h[0].style.display)
+
 for(i=0;i<h.length;i++)
     {
     if(h[i].style.display != 'none')
@@ -40,39 +32,12 @@ function dis(val)
 {
             if(val!='back')
             {
-//                if(val == 'sqr')
-//                {
-//                    calSQR()
-//                    equal_ispressed=false
-//                }
-//                else if(val == '^3')
-//                {
-//                    calCUBE()
-//                    equal_ispressed=false
-//                }
-//                else if(val == 'sroot')
-//                {
-//                    calROOT()
-//                    equal_ispressed=false
-//                }
-//                else if(val == '!')
-//                {
-//                    calFACT()
-//                    equal_ispressed=false
-//                }
-//                else{
-//                    if(equal_ispressed != true)
-//                    {
-                        var v = document.getElementById('result').value;
-                        if (v.length > 9)
-                        {
+                var v = document.getElementById('result').value;
+                if (v.length > 9)
+                {
                         return false;
-                        }
-                    }
-//                    else
-//                    {
-//                    }
-
+                }
+            }
 
             if(equal_ispressed ==true)
             {
@@ -144,12 +109,6 @@ function dis(val)
                {
                document.getElementById("result").value=val
                }
-
-//               else if(single_ispressed==true && val != 'sqr')
-//               {
-//               single_ispressed=false
-//               document.getElementById("result").value=val
-//               }
 
                else
                {
@@ -257,7 +216,6 @@ function solve()
              }
         catch(SyntaxError)
             {
-//            window.alert(SyntaxError.message)
             window.alert("Invalid Expression!")
             document.getElementById("result").value = 0
             }
@@ -292,7 +250,7 @@ function getItemfromLocalStorage()
 {
             x=JSON.parse(localStorage.getItem('eq'))
             document.getElementById("historylog").innerHTML=""
-//            document.getElementById("historylog").style.color="gray";
+
             if(x===null)
             {
                 window.alert("innull")
@@ -304,10 +262,9 @@ function getItemfromLocalStorage()
                     {
                         if(i==(x.length-1))
                         {
-
-
                         document.getElementById("historylog").innerHTML ="<span style='color:white'>"+x[i]+"</span>"+ "<br>";
                         }
+
                         else
                         {
                         document.getElementById("historylog").style.color="gray";
@@ -339,24 +296,4 @@ function clr()
 {
         document.getElementById("result").value=0
 }
-//            if(waiting_sec == true)
-//            {
-//                y=Math.pow(o1,val);
-//                t=o1+"^"+val+"="+y
-//                localStoragePush(t);
-//                document.getElementById("result").value=y
-//                equal_ispressed=true
-//                waiting_sec == false
-//            }
-//            else if(val == '^')
-//            {
-//                waiting_sec=true;
-//                o1=document.getElementById("result").value
-//                document.getElementById("result").value+=val
-//                let temp = document.getElementById("result").value
-//                y=Math.pow(temp, 2);
-//                t="sqr("+temp+")"+"="+y
-//                localStoragePush(t);
-//                document.getElementById("result").value=y
-//            }
 
